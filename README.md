@@ -2,3 +2,11 @@
 School assignment in JavaScript and HTML, using Notepad for the website for learning purposes.
 
 Ongoing assignment in a course, JavaScript and HTML, which began the 1st of November 2022.
+
+To do:
+* A portal site (start page; index.html),
+* Calendar,
+* Courts -> courts.html
+* Changing rooms -> change.html
+* Sauna -> sauna.html
+* Booking system.
