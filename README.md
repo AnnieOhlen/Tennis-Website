@@ -10,3 +10,8 @@ To do:
 * Changing rooms -> change.html
 * Sauna -> sauna.html
 * Booking system.
+
+Scripting ideas to implement?
+* Some kind of function with CSS animation connected to it?
+* Function; if window width less than x change the font-size and table sized down? First letter only, small ICONS instead?
+* Being able to change between bright & dark theme with button (bright currently standard for the website).
