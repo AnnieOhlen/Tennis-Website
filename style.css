@@ -58,7 +58,7 @@ margin: 8px auto;
 font-size: 44;
 }
 
-p {
+p, form {
 padding: 10px;
 margin: 16px auto;
 color: black;
