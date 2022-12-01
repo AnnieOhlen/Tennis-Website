@@ -11,6 +11,10 @@ To do:
 * Sauna -> sauna.html
 * Booking system.
 
+* Rolling ball on top of the menu,
+    or
+* Or rolling ball in margin when scrolling down?
+
 Scripting ideas to implement?
 * Some kind of function with CSS animation connected to it?
 * Function; if window width less than x change the font-size and table sized down? First letter only, small ICONS instead?

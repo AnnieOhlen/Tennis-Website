@@ -1,3 +1,35 @@
+/* - - - - - - - -
+.classname {
+    position: relative;
+    display: flex;
+
+    width: 250px;
+    height: 350px;
+    margin: 5px 10px;
+    padding: 10px;
+    border: 1px solid #white;
+    border-radius: 5px;
+
+    background: #black;
+    box-shadow: 5px 10px 18px #blue;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: red;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 20px;
+
+    text-shadow:
+    text-transform: uppercase;
+    transition: transform(5px);
+}
+- - - - - - - - */
+
+
+
 /* Comment CSS */
 
 body {

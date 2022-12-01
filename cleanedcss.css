@@ -1,0 +1,107 @@
+/* - - - - - - - - - - - - - - - - 
+The CSS has been sorted into the following order:
+* Colours
+* Basic overall
+* Top menu
+* Font usage
+* Styling elements
+* LAYOUT less than 600px
+* LAYOUT more than 600px
+- - - - - - - - - - - - - - - - */
+
+/* Top - Right - Bottom - Left */
+
+
+
+/* - - - - COLOURS - - - - */
+:root {
+    --bw: black;
+    --dark: #22577a;
+    --medium-dark: darkgrey;
+    --lighter: lightgrey;
+    --bright: #80ed99;
+    --wb: white;
+  }
+
+:root.darkMode {
+    --bw: white;
+    /* TBD */
+    --wb: white;
+}
+
+
+
+/* - - - - BASIC OVERALL - - - - */
+body {
+    margin: 0;
+
+    background-color: var(--lighter);
+
+    font-size: 100%;
+}
+
+
+/* - - - - TOP MENU - - - - */
+.divtopmenu {
+    position: sticky;
+    display: flex;
+    top: 0;
+
+    padding: 1rem;
+
+    /* Temporarily color added to view changes.*/
+    background: yellow;
+}
+
+#idtopmenu {
+    margin: auto;
+    /* Temporarily color added to view changes.*/
+    background-color: var(--medium-dark);
+}
+
+.atopmenu {
+    padding: 0.4rem;
+    border: 1px solid var(--wb);
+
+    background-color: var(--medium-dark);
+
+    color: white;
+    letter-spacing: 1px;
+
+    /*font-family*/
+    font-size: 20px;
+
+    text-shadow: 2px 2px 2px grey;
+    text-transform:uppercase;
+    text-decoration: none;
+}
+
+
+
+/* - - - - FONT USAGE - - - - */
+p, a {
+    font-family: verdana;
+    font-size: 16px;
+}
+
+/* Smaller citations or referal to resources.*/
+.citation {
+    /* TBD */
+}
+
+
+/* - - - - STYLING ELEMENTS - - - - */
+
+/* - - - - LAYOUT less than 600px - - - - */
+
+/*.divtopmenu {
+    min-width: 240px;
+}*/
+
+
+
+
+/* - - - - LAYOUT more than 600px - - - - */
+@media screen (min-width: 600px) {
+    
+}
