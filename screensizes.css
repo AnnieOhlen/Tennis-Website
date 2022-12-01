@@ -1,0 +1,83 @@
+/* - - - - - - - - - - - - - - - - 
+
+A CSS file for different screen sizes:
+
+* STANDARD, less than 600px (see style.css file).
+* Orientation landscape.
+* Equal or more than 600px.
+* Equal or less than 240px.
+* Equal or less than 120px.
+* Equal or less than 119px = NOT SUPPORTED.
+
+- - - - - - - - - - - - - - - - */
+
+/* Top - Right - Bottom - Left */
+
+/*
+<link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+*/
+
+/* - - - - LAYOUT less than 600px == STANDARD LAYOUT - - - - */
+
+/*.divtopmenu {
+    min-width: 240px;
+}*/
+
+
+/* LANDSCAPE */
+@media only screen and (orientation: landscape) {
+
+}
+
+/* 600px+ */
+@media screen and (min-width: 600px) {
+    /* TBD */
+}
+
+/* Traditional, new, flip phones and mobile phones (buttons) (ex. Doro 3038 @ 240x160)*/
+@media screen and (max-width: 240px) {
+        /*TBD*/
+}
+
+
+/* Small mobile phones with buttsons (120x160)*/
+@media screen and (max-width: 120px) {
+    .divtopmenu {
+        position: sticky;
+        display: block;
+        top: 0;
+    
+        padding: 0;
+    
+        /* Temporarily color added to view changes.*/
+        background: yellow;
+    }
+
+    .atopmenu {
+        padding: 0.1rem;
+        border: 1px solid var(--wb);
+    
+        background-color: var(--medium-dark);
+    
+        color: white;
+    
+        /*font-family*/
+        font-size: 12px;
+    
+        text-shadow: 2px 2px 2px grey;
+        text-transform:uppercase;
+        text-decoration: none;
+    }
+
+    p, a {
+        /*TBD*/
+    }
+}
+
+@media screen and (max-width: 119px) {
+    body {
+        display: none;
+    /* Add some kind of script as well?*/
+    }
+}

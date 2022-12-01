@@ -1,115 +1,125 @@
-/* - - - - - - - -
-.classname {
-    position: relative;
-    display: flex;
+/* Top - Right - Bottom - Left */
 
-    width: 250px;
-    height: 350px;
-    margin: 5px 10px;
-    padding: 10px;
-    border: 1px solid #white;
-    border-radius: 5px;
+/* - - - - - - - - - - - - - - - - 
+The CSS has been sorted into the following order:
+* Colours
+* BODY
+* Top menu
+* Font usage
+* Styling seperate elements
+- - - - - - - - - - - - - - - - */
 
-    background: #black;
-    box-shadow: 5px 10px 18px #blue;
 
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
 
-    color: red;
-    text-align: left;
-    letter-spacing: 1px;
-    line-height: 20px;
 
-    text-shadow:
-    text-transform: uppercase;
-    transition: transform(5px);
+/* - - - - COLOURS - - - - */
+:root {
+    --bw: black;
+    --dark: #22577a;
+    --medium-dark: darkgrey;
+    --lighter: lightgrey;
+    --bright: #80ed99;
+    --wb: white;
+  }
+
+:root.darkMode {
+    --bw: white;
+    /* TBD */
+    --wb: white;
 }
-- - - - - - - - */
 
 
 
-/* Comment CSS */
 
+/* - - - - BODY - - - - */
 body {
-background-color: lightgrey;
-}
+    margin: 0;
 
-/*The headline for each page*/
+    background-color: var(--lighter);
 
-table {
-margin: auto;
-/*border: 2px solid;
-border-color: white;*/
-padding: 4px;
-text-align: center;
-width: 800px;
-}
-
-tr {
-background-color: darkgrey;
-color: white;
-text-align: center;
-font-size: 22px;
-border: 1px solid;
-text-shadow: 2px 2px 2px grey;
-text-transform:uppercase;
-text-decoration: none;
-}
-
-a.headertext {
-background-color: darkgrey;
-color: white;
-text-align: center;
-font-size: 22px;
-text-shadow: 2px 2px 2px grey;
-text-transform:uppercase;
-text-decoration: none;
+    font-size: 100%;
 }
 
 
 
-th, td {
-border: 1.5px solid;
-border-color: grey;
+
+/* - - - - TOP MENU - - - - */
+.divtopmenu {
+    position: sticky;
+    display: flex;
+    top: 0;
+
+    padding: 1rem;
+
+    /* Temporarily color added to view changes.*/
+    background-color: var(--lighter);
+    
+}
+
+#idtopmenu {
+    margin: auto;
+    padding: 0; /*Removes 40px padding left introduced by list.*/
+    
+    /* Temporary color added to view changes.*/
+    background-color: var(--medium-dark);
+    
+    list-style-type: none;
+}
+
+.atopmenu {
+    padding: 0.4rem;
+    border: 1px solid var(--wb);
+
+    background-color: var(--medium-dark);
+
+    color: white;
+    letter-spacing: 1px;
+
+    /*font-family*/
+    font-size: 20px;
+
+    text-shadow: 2px 2px 2px grey;
+    text-transform:uppercase;
+    text-decoration: none;
+}
+
+
+
+
+/* - - - - FONT USAGE - - - - */
+p, a {
+    font-family: verdana;
+    font-size: 16px;
+}
+
+p {
+    background-color: var(--wb);
+}
+
+/* Smaller citations or referal to resources.*/
+.citation {
+    /* TBD */
+}
+
+
+
+
+/* - - - - STYLING SEPERATE ELEMENTS - - - - */
+header {
+    margin: 1rem;
+    padding:0;
+
+    border: 2px solid var(--wb);
+    outline-style: dotted;
+    outline-offset: -1px;
+    outline-color: var(--wb);
+
+    background-color: var(--medium-dark);
 }
 
 .headline {
-background-color: darkgrey;
-color: white;
-text-align: center;
-border: 2px solid;
-text-shadow: 2px 2px 4px grey;
-padding: 8px;
-outline-style: dotted;
-outline-color: white;
-outline-offset: -1px;
-max-width: 770px;
-margin: 8px auto;
-font-size: 44;
-}
+    color: var(--wb);
+    text-align: center;
 
-p, form {
-padding: 10px;
-margin: 16px auto;
-color: black;
-background-color: white;
-border: 2px solid;
-border-color: grey;
-max-width: 900px;
-font-family: Verdana;
-font-size: 14;
-}
-
-/*Small notes, references, etc.*/
-.note {
-text-align: right;
-font-size: 12px;
-}
-
-/* Color for note links.*/
-a.note {
-color: darkorange;
-font-family: Calibri, Arial;
+    text-shadow: 2px 2px 4px grey;    
 }

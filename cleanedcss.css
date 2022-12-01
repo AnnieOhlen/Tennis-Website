@@ -50,13 +50,18 @@ body {
     padding: 1rem;
 
     /* Temporarily color added to view changes.*/
-    background: yellow;
+    background-color: var(--lighter);
+    
 }
 
 #idtopmenu {
     margin: auto;
-    /* Temporarily color added to view changes.*/
+    padding: 0; /*Removes 40px padding left introduced by list.*/
+    
+    /* Temporary color added to view changes.*/
     background-color: var(--medium-dark);
+    
+    list-style-type: none;
 }
 
 .atopmenu {
@@ -84,6 +89,10 @@ p, a {
     font-size: 16px;
 }
 
+p {
+    background-color: var(--wb);
+}
+
 /* Smaller citations or referal to resources.*/
 .citation {
     /* TBD */
@@ -91,17 +100,21 @@ p, a {
 
 
 /* - - - - STYLING ELEMENTS - - - - */
+header {
+    margin: 1rem;
+    padding:0;
 
-/* - - - - LAYOUT less than 600px - - - - */
+    border: 2px solid var(--wb);
+    outline-style: dotted;
+    outline-offset: -1px;
+    outline-color: var(--wb);
 
-/*.divtopmenu {
-    min-width: 240px;
-}*/
+    background-color: var(--medium-dark);
+}
 
+.headline {
+    color: var(--wb);
+    text-align: center;
 
-
-
-/* - - - - LAYOUT more than 600px - - - - */
-@media screen (min-width: 600px) {
-    
+    text-shadow: 2px 2px 4px grey;    
 }
