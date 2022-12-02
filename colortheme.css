@@ -15,7 +15,7 @@ CSS for colors only:
     --wb: white;
   }
 
-:root.darkMode {
+.darkmode {
     --bw: white;
     /* TBD */
     --wb: black;

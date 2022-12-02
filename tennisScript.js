@@ -12,10 +12,9 @@ Some kind of function with CSS animation connected to it?
 - Being able to change between bright & dark theme with button (bright currently standard for the website).
 */
 
-
 //Script _only_ after this comment:
 
-
-
-
-
+function changeTheme() {
+    var element = document.body;
+    element.classList.toggle("darkMode")
+}

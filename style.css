@@ -6,12 +6,18 @@
 /* - - - - - - - - - - - - - - - - 
 The CSS has been sorted into the following order:
 * BODY
+* Buttons
 * Top menu
 * Font usage
 * Styling seperate elements
 - - - - - - - - - - - - - - - - */
 
+/* - - - - BUTTONS - - - - */
 
+button {
+    min-height: 2rem;
+    min-width: 2rem;
+}
 
 /* - - - - BODY - - - - */
 body {
