@@ -48,7 +48,7 @@ A CSS file for different screen sizes:
     /* TBD */
 }
 
-/* Traditional, new, flip phones and mobile phones (buttons) (ex. Doro 3038 @ 240x160)*/
+/* Traditional, new, flip phones and mobile phones (buttons) (ex. Doro 3038 @ 240x320)*/
 @media screen and (max-width: 240px) {
         /*TBD*/
 }
