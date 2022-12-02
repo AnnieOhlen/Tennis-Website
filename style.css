@@ -1,33 +1,15 @@
+/*Importing colors:*/
+@import "colortheme.css";
+
 /* Top - Right - Bottom - Left */
 
 /* - - - - - - - - - - - - - - - - 
 The CSS has been sorted into the following order:
-* Colours
 * BODY
 * Top menu
 * Font usage
 * Styling seperate elements
 - - - - - - - - - - - - - - - - */
-
-
-
-
-/* - - - - COLOURS - - - - */
-:root {
-    --bw: black;
-    --dark: #22577a;
-    --medium-dark: darkgrey;
-    --lighter: lightgrey;
-    --bright: #80ed99;
-    --wb: white;
-  }
-
-:root.darkMode {
-    --bw: white;
-    /* TBD */
-    --wb: white;
-}
-
 
 
 
@@ -44,7 +26,7 @@ body {
 
 
 /* - - - - TOP MENU - - - - */
-.divtopmenu {
+.divclasstopmenu {
     position: sticky;
     display: flex;
     top: 0;
@@ -52,21 +34,21 @@ body {
     padding: 1rem;
 
     /* Temporarily color added to view changes.*/
-    background-color: var(--lighter);
+    background-color: var(--medium-dark);
     
 }
 
-#idtopmenu {
+.ulclasstopmenu {
     margin: auto;
     padding: 0; /*Removes 40px padding left introduced by list.*/
     
     /* Temporary color added to view changes.*/
-    background-color: var(--medium-dark);
+    background-color: var(--bright);
     
     list-style-type: none;
 }
 
-.atopmenu {
+.aclasstopmenu {
     padding: 0.4rem;
     border: 1px solid var(--wb);
 
@@ -75,32 +57,31 @@ body {
     color: white;
     letter-spacing: 1px;
 
-    /*font-family*/
-    font-size: 20px;
+    font-family: verdana;
 
     text-shadow: 2px 2px 2px grey;
     text-transform:uppercase;
     text-decoration: none;
 }
 
-
+.aclasstopmenu {
+    font-size: 1.3em;
+}
 
 
 /* - - - - FONT USAGE - - - - */
 p, a {
-    font-family: verdana;
-    font-size: 16px;
-}
+    font-family: 'Raleway';
+    font-size: 1em;
 
-p {
-    background-color: var(--wb);
+    text-decoration: none;
 }
 
 /* Smaller citations or referal to resources.*/
-.citation {
-    /* TBD */
+/*
+.classcitation {
 }
-
+*/
 
 
 
@@ -117,9 +98,73 @@ header {
     background-color: var(--medium-dark);
 }
 
-.headline {
+h1 {
+    font-family: 'Cambo';
+}
+
+.h1headline {
     color: var(--wb);
     text-align: center;
 
     text-shadow: 2px 2px 4px grey;    
+}
+
+.divclassclub, .divclassinfo {
+    letter-spacing: 1px;
+
+    background-color: var(--wb);
+    text-align: center;
+}
+
+.ulclassfoot {
+    display: grid;
+    Position: fixed;
+    bottom: 0;
+
+    min-width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+
+    list-style-type: none;
+
+
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    background-color: var(--medium-dark);
+
+    list-style-type: none;
+    */
+}
+
+
+.aclassfoot {
+
+    background-color: var(--medium-dark);
+
+    color: white;
+    letter-spacing: 1px;
+
+    font-family: verdana;
+
+
+    text-shadow: 2px 2px 2px grey;
+    text-transform:uppercase;
+    text-decoration: none;
+
+
+
+}
+
+#githubicon {
+    color: white;
+    border-color: #62959C;
 }

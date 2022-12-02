@@ -1,13 +1,17 @@
+/*Importing colors:*/
+@import "colortheme.css";
+
+
 /* - - - - - - - - - - - - - - - - 
 
 A CSS file for different screen sizes:
 
-* STANDARD, less than 600px (see style.css file).
-* Orientation landscape.
-* Equal or more than 600px.
-* Equal or less than 240px.
-* Equal or less than 120px.
-* Equal or less than 119px = NOT SUPPORTED.
+* STANDARD, equal or less than 375px (see style.css file).  | Note:
+* Orientation landscape.                                    | Note:
+* Equal or more than 600px.                                 | Note: Bigger screens. 6 colum, 1 row, grid layout for main? two small sides for photos and two text content in the middle of two each?
+* Equal or less than 240px.                                 | Note:
+* Equal or less than 120px.                                 | Note:
+* Less than 119px = NOT SUPPORTED + ERROR MESSAGE.          | Note:
 
 - - - - - - - - - - - - - - - - */
 
@@ -18,11 +22,20 @@ A CSS file for different screen sizes:
 <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
 */
 
-/* - - - - LAYOUT less than 600px == STANDARD LAYOUT - - - - */
+/* - - - - STANDARD LAYOUT (not specified but layout/style designed for less than 600px - - - - */
 
-/*.divtopmenu {
-    min-width: 240px;
-}*/
+.errormessagescreensize, .errormessageshort {
+    display:none;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--lighter);
+
+    color: var(--bw);
+
+    text-align: center;
+}
 
 
 /* LANDSCAPE */
@@ -75,8 +88,33 @@ A CSS file for different screen sizes:
     }
 }
 
+
+/* Less than 120px = NOT SUPPORTED + ERROR MESSAGE */
 @media screen and (max-width: 119px) {
-    body {
+
+    .errormessagescreensize {
+        display: block;
+        padding: 2px;
+    }
+
+    .iferrorscreensize {
+        display: none;
+    /* Add some kind of script as well?*/
+    }
+}
+
+@media screen and (max-width: 50px) {
+
+    .errormessagescreensize {
+        display:none;
+    }
+
+    .errormessageshort {
+        display: block;
+        padding: 2px;
+    }
+
+    .iferrorscreensize {
         display: none;
     /* Add some kind of script as well?*/
     }

@@ -1,0 +1,22 @@
+/* - - - - - - - - - - - - - - - - 
+CSS for colors only:
+
+* Variables for standard color theme
+* Variables for dark theme
+* Any CSS neccesary for switch/toogle
+- - - - - - - - - - - - - - - - */
+
+:root {
+    --bw: black;
+    --dark: #62959C;
+    --medium-dark: #C19277;
+    --lighter: #C2B092;
+    --bright: #EAE3C8;
+    --wb: white;
+  }
+
+:root.darkMode {
+    --bw: white;
+    /* TBD */
+    --wb: black;
+}
