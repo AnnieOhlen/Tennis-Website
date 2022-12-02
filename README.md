@@ -15,6 +15,12 @@ Neccesary components to complete the assignment with passing grade:
 * Sauna             | Note:
 * Booking system    | Note:
 
+    Specifics:
+    - Responsive bookingsystem
+    - Validate in-data with JavaScript and DOM
+    - Useage of dynamical menus (ex. hamburger small screen)
+    - Use of a modern JavaScript-libary such as React
+    - Good accessibility (see WCAG)
 - - - - - - - - - - - - - - - -
 
 Extra implementations suggested:
