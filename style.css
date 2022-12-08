@@ -40,8 +40,7 @@ nav {
     padding: 1rem;
 
     /* Temporarily color added to view changes.*/
-    background-color: var(--medium-dark);
-    
+    background-color: var(--medium-dark);  
 }
 
 .ulclasstopmenu {
@@ -50,7 +49,7 @@ nav {
     
     /* Temporary color added to view changes.*/
     background-color: var(--bright);
-    
+    box-shadow: .5rem .5rem var(--lighter);
     list-style-type: none;
 }
 
@@ -71,7 +70,7 @@ nav {
 }
 
 .aclasstopmenu {
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 
@@ -121,7 +120,7 @@ h1 {
 }
 
 img {
-    max-height: 80;
+    /*max-height: 80vh;*/
     max-width: 100%;
 }
 
