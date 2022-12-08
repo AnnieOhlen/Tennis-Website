@@ -15,9 +15,32 @@ The CSS has been sorted into the following order:
 /* - - - - BUTTONS - - - - */
 
 button {
+    background-color: var(--lighter);
+    border-radius: .5rem;
+    border: 1.5px solid var(--wb);
+}
+
+
+#themebutton {
+    position: fixed;
+    display: block;
+    left: .5rem;
+    top: .5rem;
+
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+#hamburger {
+    position: fixed;
+    display: block;
+    left: .5rem;
+    top: 2rem;
+
     min-height: 2rem;
     min-width: 2rem;
 }
+
 
 /* - - - - BODY - - - - */
 body {
@@ -132,6 +155,10 @@ img {
     background-color: var(--wb);
 
     text-align: center;
+
+    /*Nedan två rader om snyggt att de vita rutorna inte går över hela sidan.*/
+    width: 99vw;
+    margin: auto;
 }
 
 .divclassinfo {
