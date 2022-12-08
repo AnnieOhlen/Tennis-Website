@@ -53,4 +53,16 @@ List of icons to maybe put to use:
 <i class="fa-solid fa-otter"></i> "otter" Club logo maybe?
 <i class="fa-solid fa-handshake-angle"></i>
 
+- - - - - - - - - - - - - - - -
+
+(Grid: min-height 100vh (index.css);
+Flytta footer utanför grid (nedanför).
+Fixa menyerna och layouten.)
+
+On scroll-down (hide menu)
+On scroll-up (show menu)
+Hamburger for small sizes
+
+- - - - - - - - - - - - - - - -
+
 -->
