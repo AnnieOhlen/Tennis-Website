@@ -32,7 +32,7 @@ body {
 
 
 /* - - - - TOP MENU - - - - */
-.divclasstopmenu {
+nav {
     position: sticky;
     display: flex;
     top: 0;
@@ -76,9 +76,9 @@ body {
 
 
 /* - - - - FONT USAGE - - - - */
-p, a {
+p, a, form {
     font-family: 'Raleway';
-    font-size: 1em;
+    font-size: 1rem;
 
     text-decoration: none;
 }
@@ -91,9 +91,9 @@ p, a {
 
 
 
-/* - - - - STYLING SEPERATE ELEMENTS - - - - */
+/* - - - - HEADER - - - - */
 header {
-    margin: 1rem;
+    margin: .5rem;
     padding:0;
 
     border: 2px solid var(--wb);
@@ -106,6 +106,11 @@ header {
 
 h1 {
     font-family: 'Cambo';
+    font-size: 2rem;
+}
+
+@media screen {
+    
 }
 
 .h1headline {
@@ -115,62 +120,59 @@ h1 {
     text-shadow: 2px 2px 4px grey;    
 }
 
-.divclassclub, .divclassinfo {
+img {
+    max-height: 80;
+    max-width: 100%;
+}
+
+
+/* - - - - MAIN CONTENT - - - - */
+.divclub, .divclassinfo, #dividbooking {
     letter-spacing: 1px;
 
     background-color: var(--wb);
+
     text-align: center;
 }
 
-.ulclassfoot {
-    display: grid;
-    Position: fixed;
-    bottom: 0;
+.divclassinfo {
+    margin-bottom: 3rem;
+}
 
-    min-width: 100%;
-
-    padding: 0;
-    margin: 0;
-
-
-    list-style-type: none;
-
-
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-
-    padding: 0;
-    margin: 0;
-
-    background-color: var(--medium-dark);
-
-    list-style-type: none;
-    */
+#dividbooking {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 
-.aclassfoot {
+
+/* - - - - FOOTER - - - - */
+footer {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    width: 100vw;
+
+    padding: .2rem;
 
     background-color: var(--medium-dark);
 
+    text-align: center;
+}
+
+footer ul {
+    margin: auto;
+    padding: 0; /*Removes left padding introduced by list.*/
+    list-style-type: none;
+}
+
+footer a {
     color: white;
     letter-spacing: 1px;
 
     font-family: verdana;
 
-
     text-shadow: 2px 2px 2px grey;
-    text-transform:uppercase;
     text-decoration: none;
-
-
-
-}
-
-#githubicon {
-    color: white;
-    border-color: #62959C;
 }

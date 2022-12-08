@@ -10,40 +10,64 @@
 
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="screensizes.css" />
-		
-		<!--
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Cambo|Abel" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Cambo|Abel" />		
 		<script src="https://kit.fontawesome.com/d87e0aa2fd.js" crossorigin="anonymous"></script>
-		-->
-		
+		<script scr="tennisScript.js"></script>
 	</head>
 
 	<!-- BODY -->
 	<body>
-		<!-- TOP MENU -->
-		<div class="divtopmenu">
-			<ul id="idtopmenu">
-				<li><a class="atopmenu" href="index.html">Start</a></li>
-				<li><a class="atopmenu" href="index.html">Booking</a></li>
-				<li><a class="atopmenu" href="change.html">Faculities</a></li>
-				<li><a class="atopmenu" href="sauna.html">Sauna</a></li>
-				<li><a class="atopmenu" href="courts.html">Courts</a></li>
-			</ul>
-		</div>
 
-		<header><h1 class="headline">Sauna</h1></header>
+		<!-- Error messages for not supported screen width -->
+		<p class="errormessagescreensize">Error:<br/> Stödjer inte mindre än 120 pixlar i bredd!</p>
+		<p class="errormessageshort">Error:<br/> Liten skärm<br/>!</p>
 
-		<!-- MAIN -->
-		<div id="maincontent">
-			<main>
-				<p id="pclub"><br/>
-					About the club's changing rooms, lockers and faucilities.
-				<br/><br/></p>
-			</main>
-			<!-- MAIN END -->
-		</div>
-		<!-- DIV MAIN END -->
+		<div class="iferrorscreensize">
+
+			<!-- TOP MENU -->
+			<nav>
+				<ul class="ulclasstopmenu">
+					<li><a class="aclasstopmenu" href="index.html">Start</a></li>
+					<li><a class="aclasstopmenu" href="reservation.html">Reservation</a></li>
+					<li><a class="aclasstopmenu" href="change.html">Faculities</a></li>
+					<li><a class="aclasstopmenu" href="sauna.html">Sauna</a></li>
+					<li><a class="aclasstopmenu" href="courts.html">Courts</a></li>
+				</ul>
+			</nav>
+
+			<button id="changetheme" onclick="changeTheme"></button>
+
+			<div class="gridcontainer">
+				<header>
+					<h1 class="h1headline">Sauna</h1>
+				</header>
+
+				<!-- MAIN -->
+				<div class="divclassmaincontent">
+					<main>
+						<div class="divclub">
+
+							<p><br/>
+								About the club's changing rooms, lockers and faucilities.
+							<br/><br/></p>
+						</div>
+
+						<img src="\pexels-huum-6626143.jpg" alt="Sauna"/>
+					</main>
+					<!-- MAIN END -->
+				</div>
+				<!-- DIV MAIN END -->
+
+				<footer>
+						<ul>
+							<li><a href="https://github.com/AnnieOhlen/Tennis-Website" target="_blank"><i class="fa-brands fa-github"></i> About us</a></li>
+						</ul>
+				</footer>
+
+			</div> <!-- DIV GRIDCONTAINER END -->
+		</div> <!-- div class "iferrorscreensize" end-->
 	</body>
 	<!-- BODY END -->
-	
+
 </html>

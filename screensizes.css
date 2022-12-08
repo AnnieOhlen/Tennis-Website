@@ -3,26 +3,14 @@
 
 
 /* - - - - - - - - - - - - - - - - 
-
-A CSS file for different screen sizes:
-
-* STANDARD, equal or less than 375px (see style.css file).  | Note:
+(Standard less than 600px and =/more than 350px.)
 * Orientation landscape.                                    | Note:
-* Equal or more than 600px.                                 | Note: Bigger screens. 6 colum, 1 row, grid layout for main? two small sides for photos and two text content in the middle of two each?
+* Equal or more than 600px.                                 | Note:
 * Equal or less than 240px.                                 | Note:
 * Equal or less than 120px.                                 | Note:
 * Less than 119px = NOT SUPPORTED + ERROR MESSAGE.          | Note:
 
 - - - - - - - - - - - - - - - - */
-
-/* Top - Right - Bottom - Left */
-
-/*
-<link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
-<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
-*/
-
-/* - - - - STANDARD LAYOUT (not specified but layout/style designed for less than 600px - - - - */
 
 .errormessagescreensize, .errormessageshort {
     display:none;
@@ -43,20 +31,37 @@ A CSS file for different screen sizes:
 
 }
 
+
+
+
+
+
 /* 600px+ */
 @media screen and (min-width: 600px) {
     /* TBD */
 }
 
-/* Traditional, new, flip phones and mobile phones (buttons) (ex. Doro 3038 @ 240x320)*/
+
+
+/* 600px+ */
+@media screen and (min-width: 600px) {
+    /* TBD */
+}
+
+/* 240x320 */
 @media screen and (max-width: 240px) {
         /*TBD*/
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
 }
 
 
-/* Small mobile phones with buttsons (120x160)*/
+/* 120x160 */
 @media screen and (max-width: 120px) {
-    .divtopmenu {
+    nav {
         position: sticky;
         display: block;
         top: 0;
@@ -85,6 +90,14 @@ A CSS file for different screen sizes:
 
     p, a {
         /*TBD*/
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    footer {
+        position: static;
     }
 }
 
