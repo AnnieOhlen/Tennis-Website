@@ -21,6 +21,7 @@ Neccesary components to complete the assignment with passing grade:
     - Useage of dynamical menus (ex. hamburger small screen)
     - Use of a modern JavaScript-libary such as React
     - Good accessibility (see WCAG)
+    - Implement sessionStorage
 - - - - - - - - - - - - - - - -
 
 Extra implementations suggested:
