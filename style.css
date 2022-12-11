@@ -1,5 +1,23 @@
 @import "colortheme.css";
 
+:root,
+:root.light {
+    --bw: black;
+    --dark: #62959c;
+    --medium-dark: #C19277;
+    --lighter: #C2B092;
+    --bright: #EAE3C8;
+    --wb: white;
+  }
+
+:root.dark {
+    --bw: white;
+    --dark: #EAE3C8;
+    --medium-dark: #C2B092;
+    --lighter: #C19277;
+    --bright: #62959c;
+    --wb: black;
+}
 
 /* - - - - BUTTONS - - - - */
 button {
@@ -196,4 +214,115 @@ footer a {
     font-family: verdana;
     text-shadow: 2px 2px 2px grey;
     text-decoration: none;
+}
+
+
+/* - - - - SCREEN SIZES - - - - */
+
+@media screen and (min-width: 360px) {
+    .ulclasstopmenu {
+        margin: auto;
+        background-color: var(--bright);
+        box-shadow: .5rem .5rem var(--lighter);
+    }
+
+    .aclasstopmenu {
+        letter-spacing: 1px;
+        padding: 0rem .2rem 0rem .2rem;
+    } 
+}
+
+
+@media screen and (max-width: 350px) {
+        nav {
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        .aclasstopmenu {
+            font-size: 1rem;
+            padding: 0rem .2rem 0rem .2rem;
+        }
+}
+
+
+@media screen and (max-width: 120px) {
+    nav {
+        position: sticky;
+        display: block;
+        top: 0;
+        padding: 0;
+    }
+
+    .ulclasstopmenu {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .atopmenu {
+        padding: 0.1rem;
+        border: 1px solid var(--wb);
+        background-color: var(--medium-dark);
+        color: white;
+        font-size: 1rem;
+        text-shadow: 2px 2px 2px grey;
+        text-transform:uppercase;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 0.5rem;
+    }
+
+    footer {
+        position: static;
+    }
+
+    form label, form input {
+        font-size: 1rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+}
+
+
+/* ERROR MESSAGES */
+.errormessagescreensize, .errormessageshort {
+    display:none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--lighter);
+    color: var(--bw);
+    text-align: center;
+}
+
+@media screen and (max-width: 119px) {
+
+    .errormessagescreensize {
+        display: block;
+        padding: 2px;
+    }
+
+    .iferrorscreensize {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 50px) {
+
+    .errormessagescreensize {
+        display:none;
+    }
+
+    .errormessageshort {
+        display: block;
+        padding: 2px;
+    }
+
+    .iferrorscreensize {
+        display: none;
+    }
 }
