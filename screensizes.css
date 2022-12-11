@@ -1,23 +1,21 @@
 @import "colortheme.css";
-/* CSS file for standard layout + layout different screen sizes. */
 
-/* 600px+ */
-@media screen and (min-width: 600px) {
 
+@media screen and (min-width: 360px) {
+    .ulclasstopmenu {
+        margin: auto;
+        background-color: var(--bright);
+        box-shadow: .5rem .5rem var(--lighter);
+    }
+
+    .aclasstopmenu {
+        letter-spacing: 1px;
+        padding: 0rem .2rem 0rem .2rem;
+    } 
 }
 
-/* Max 600px */
-@media screen and (max-width: 600px) {
-    /* TBD */
 
-}
-
-
-
-/* 240x320 */
 @media screen and (max-width: 350px) {
-        /*TBD*/
-
         nav {
             padding: 0;
         }
@@ -28,41 +26,33 @@
 
         .aclasstopmenu {
             font-size: 1rem;
+            padding: 0rem .2rem 0rem .2rem;
         }
 }
 
 
-/* 120x160 */
 @media screen and (max-width: 120px) {
     nav {
         position: sticky;
         display: block;
         top: 0;
-    
         padding: 0;
-    
-        /* Temporarily color added to view changes.*/
-        background: yellow;
+    }
+
+    .ulclasstopmenu {
+        margin: 0;
+        box-shadow: none;
     }
 
     .atopmenu {
         padding: 0.1rem;
         border: 1px solid var(--wb);
-    
         background-color: var(--medium-dark);
-    
         color: white;
-    
-        /*font-family*/
-        font-size: 12px;
-    
+        font-size: 1rem;
         text-shadow: 2px 2px 2px grey;
         text-transform:uppercase;
         text-decoration: none;
-    }
-
-    p, a {
-        /*TBD*/
     }
 
     h1 {
@@ -75,20 +65,13 @@
 }
 
 
-
-
-
 /* ERROR MESSAGES */
 .errormessagescreensize, .errormessageshort {
     display:none;
-
     margin: 0;
     padding: 0;
-
     background-color: var(--lighter);
-
     color: var(--bw);
-
     text-align: center;
 }
 

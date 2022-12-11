@@ -1,57 +1,37 @@
-/*Importing colors:*/
 @import "colortheme.css";
 
-/* Top - Right - Bottom - Left */
-
-/* - - - - - - - - - - - - - - - - 
-The CSS has been sorted into the following order:
-* BODY
-* Buttons
-* Top menu
-* Font usage
-* Styling seperate elements
-- - - - - - - - - - - - - - - - */
 
 /* - - - - BUTTONS - - - - */
-
 button {
     background-color: var(--lighter);
     border-radius: .5rem;
     border: 1.5px solid var(--wb);
+    color: white;
 }
-
 
 #themebutton {
     position: fixed;
     display: block;
     left: .5rem;
     top: .5rem;
-
     min-height: 1rem;
     min-width: 1rem;
 }
 
-#hamburger {
+#toTop {
     position: fixed;
     display: block;
-    left: .5rem;
-    top: 2rem;
-
-    min-height: 2rem;
-    min-width: 2rem;
+    bottom: 0.2rem;
+    right: 1rem;
 }
 
 
 /* - - - - BODY - - - - */
 body {
     margin: 0;
-
     background-color: var(--lighter);
-
     font-size: 100%;
 }
-
-
 
 
 /* - - - - TOP MENU - - - - */
@@ -59,32 +39,21 @@ nav {
     position: sticky;
     display: flex;
     top: 0;
-
     padding: 1rem;
-
     background-color: var(--medium-dark);  
 }
 
 .ulclasstopmenu {
-    margin: auto;
+    margin: 0;
     padding: 0; /*Removes 40px padding left introduced by list.*/
-    
-    background-color: var(--bright);
-    box-shadow: .5rem .5rem var(--lighter);
     list-style-type: none;
 }
 
 .aclasstopmenu {
-    padding: 0rem .2rem 0rem .2rem;
     border: 1px solid var(--wb);
-
     background-color: var(--medium-dark);
-
     color: white;
-    letter-spacing: 1px;
-
     font-family: verdana;
-
     text-shadow: 2px 2px 2px grey;
     text-transform:uppercase;
     text-decoration: none;
@@ -99,7 +68,6 @@ nav {
 p, a, form {
     font-family: 'Raleway';
     font-size: 1rem;
-
     text-decoration: none;
 }
 
@@ -108,14 +76,11 @@ p, a, form {
 header {
     margin: .5rem;
     padding:0;
-
     border: 2px solid var(--wb);
     outline-style: dotted;
     outline-offset: -1px;
     outline-color: var(--wb);
-
     background-color: var(--medium-dark);
-
     width: 90vw;
     margin: auto;
     margin-top: 1rem;
@@ -133,7 +98,6 @@ h1 {
 .h1headline {
     color: var(--wb);
     text-align: center;
-
     text-shadow: 2px 2px 4px grey;
 }
 
@@ -157,11 +121,8 @@ img {
 /* - - - - MAIN CONTENT - - - - */
 .divclub, .divclassinfo, #dividbooking {
     letter-spacing: 1px;
-
     background-color: var(--wb);
-
     text-align: center;
-
     width: 95vw;
     margin: auto;
     border-radius: .5rem;
@@ -219,11 +180,8 @@ footer {
     display: block;
     bottom: 0;
     width: 100vw;
-
     padding: .2rem;
-
     background-color: var(--medium-dark);
-
     text-align: center;
 }
 
@@ -236,9 +194,7 @@ footer ul {
 footer a {
     color: white;
     letter-spacing: 1px;
-
     font-family: verdana;
-
     text-shadow: 2px 2px 2px grey;
     text-decoration: none;
 }
