@@ -19,7 +19,7 @@ function changeTheme() {
 
 
 
-//const setTheme = theme => document.documentElement.className = theme;
+const setTheme = theme => document.documentElement.className = theme;
 
 
 
