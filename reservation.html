@@ -53,42 +53,34 @@
 
 				<!-- BOOKING FORM -->
 				<div id="dividbooking">
-					<form>
-						<br/>Would you like to book anything? <br />If yes, then please sumbit the form down below.<br/><br/>
-						<label for="fullname">Full name:</label>
-						<input type="text" id="fullname" name="fullname" placeholder="Full Name"><br/><br/>
+					<form name="reservationForm">
+						<br/>
+						<label for="firstname">First name:</label>
+						<input type="text" id="firstname" name="firstname" placeholder="First Name" minlength="3" maxlength="20" required><br/><br/>
+						<label for="lastname">Last name:</label>
+						<input type="text" id="lastname" name="lastname" placeholder="Last Name" minlength="3" maxlength="20" required><br/><br/>
 
-						<label for="bookcourt">Which court(s) would you like to book?</label><br/>
-						<input type="checkbox" id="court_a" name="bookcourt" value="Court A">
-						<label for="court_a">Court A</label><br/>
-						<input type="checkbox" id="court_b" name="bookcourt" value="Court B">
-						<label for="court_b">Court B</label><br/><br/>
+						<br/><label for="reqdate">Requested date:</label>
+						<input type="date" id="reqdate" name="date" max="2025-01-01" onfocus="this.min=new Date().toISOString().split('T')[0]" required><br/><br/>
 
-						<label for="bookchange">Which changing room would you like to book?</label><br/>
-						<input type="checkbox" id="change_a" name="bookchange" value="Changing room A">
-						<label for="change_a">Changing room A</label><br/>
-						<input type="checkbox" id="change_b" name="bookchange" value="Changing room B">
-						<label for="change_b">Changing room B</label><br/>
-						<input type="checkbox" id="change_c" name="bookchange" value="Changing room C">
-						<label for="change_c">Changing room C</label><br/><br/>
-
-						<label for="booksauna">Would you like to book the sauna?</label><br/>
+						<label for="court_a">Court A + changing room</label>
+						<input type="checkbox" id="court_a" name="bookcourt" value="Court A"><br/><br/>
+						<label for="court_b">Court B + changing room</label>
+						<input type="checkbox" id="court_b" name="bookcourt" value="Court B"><br/><br/>
+						
+						<br/><label for="booksauna">Book the sauna?</label><br/><br/>
+						<label for="sauna_yes">Yes</label>
 						<input type="radio" id="sauna_yes" name="booksauna" value="Yes">
-						<label for="sauna_yes">Yes</label><br/>
-						<input type="radio" id="sauna_no" name="booksauna" value="No">
-						<label for="sauna_no">No</label><br/><br/>
+						<label for="sauna_no">No</label>
+						<input type="radio" id="sauna_no" name="booksauna" value="No"><br/><br/>
+						
+						<br/><label for="email">E-mail for confirmation:</label><br/><br/>
+						<input type="email" id="email" name="email" placeholder="E-mail adress" required><br/><br/>
 
-						<label for="emailconfirm">E-mail for confirmation:</label>
-						<input type="text" id="emailconfirm" name="emailconfirm" placeholder="E-mail adress"><br/><br/>
-
-						<br/><input type="submit" value="Submit"><br/><br/>
+						<input type="submit" value="Submit" id="formsubmit"><br/><br/>
 					</form>
 				</div>
-				<!-- BOOKING FORM END -->				
-
-				<div class="divimg">
-					<img class="img1" src="Media\pexels-pixabay-459399.jpg" alt="Beach" />
-				</div>
+				<!-- BOOKING FORM END -->
 			</main> <!-- MAIN END -->
 
 			<footer>

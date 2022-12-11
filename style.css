@@ -62,7 +62,6 @@ nav {
 
     padding: 1rem;
 
-    /* Temporarily color added to view changes.*/
     background-color: var(--medium-dark);  
 }
 
@@ -70,14 +69,13 @@ nav {
     margin: auto;
     padding: 0; /*Removes 40px padding left introduced by list.*/
     
-    /* Temporary color added to view changes.*/
     background-color: var(--bright);
     box-shadow: .5rem .5rem var(--lighter);
     list-style-type: none;
 }
 
 .aclasstopmenu {
-    padding: 0.4rem;
+    padding: 0rem .2rem 0rem .2rem;
     border: 1px solid var(--wb);
 
     background-color: var(--medium-dark);
@@ -170,7 +168,44 @@ img {
 }
 
 #dividbooking {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    background-image: url("pexels-aaron-ulsh-2882660.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    font-weight: bold;
+    outline: .1rem solid white;
+    text-shadow: .1rem .1rem .2rem black;
+}
+
+form label, form input {
+    border-radius: .4rem;
+    border: .1rem solid white;
+    padding: .2rem;
+    margin: auto;
+}
+
+form label {
+    background-color: var(--dark);
+}
+
+form input {
+    background-color: white;
+}
+
+#formsubmit {
+    border-radius: .4rem;
+    border: .1rem solid white;
+    padding: .4rem;
+    margin: auto;
+    background-color: var(--dark);
+
+    color: white;
+    font-weight: bold;
+    text-shadow: .1rem .1rem .2rem black;
 }
 
 .divclassinfo {
