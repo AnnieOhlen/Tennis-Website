@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 	<head>
 		<title>Fictional Tennis Club Website</title>
@@ -19,9 +19,9 @@
 	<!-- BODY -->
 	<body>
 
-		<!-- Error messages for not supported screen width -->
-		<p class="errormessagescreensize">Error:<br/> Stödjer inte mindre än 120 pixlar i bredd!</p>
-		<p class="errormessageshort">Error:<br/> Liten skärm<br/>!</p>
+		<!-- Error messages -->
+		<p class="errormessagescreensize">Error:<br/> Does not support less than 120 pixels in width!</p>
+		<p class="errormessageshort">Error:<br/> Small screen!<br/>!</p>
 
 		<div class="iferrorscreensize">
 
@@ -36,38 +36,31 @@
 				</ul>
 			</nav>
 
-			<button id="changetheme" onclick="changeTheme"></button>
+			<button id="themebutton" onclick="themeButton"></button>
+			<button id="hamburger" onclick="flipBurger"></button>
 
-			<div class="gridcontainer">
-				<header>
-					<h1 class="h1headline">Sauna</h1>
-				</header>
+			<header>
+				<h1 class="h1headline">Sauna</h1>
+			</header>
 
-				<!-- MAIN -->
-				<div class="divclassmaincontent">
-					<main>
-						<div class="divclub">
-
-							<p><br/>
-								About the club's changing rooms, lockers and faucilities.
-							<br/><br/></p>
-						</div>
-
-						<img src="Media\pexels-huum-6626143.jpg" alt="Sauna"/>
-					</main>
-					<!-- MAIN END -->
+			<!-- MAIN -->
+			<main>
+				<div class="divclub">
+					<p><br/>
+					The club has a sauna available for relaxation.
+					<br/><br/></p>
 				</div>
-				<!-- DIV MAIN END -->
 
-				<footer>
-						<ul>
-							<li><a href="https://github.com/AnnieOhlen/Tennis-Website" target="_blank"><i class="fa-brands fa-github"></i> About us</a></li>
-						</ul>
-				</footer>
+				<div class="divimg">
+					<img class="img1" src="Media\pexels-huum-6626143.jpg" alt="Sauna"/>
+				</div>
+			</main> <!-- MAIN END -->
 
-			</div> <!-- DIV GRIDCONTAINER END -->
+			<footer>
+				<ul>
+					<li><a href="https://github.com/AnnieOhlen/Tennis-Website" target="_blank"><i class="fa-brands fa-github"></i> About us</a></li>
+				</ul>
+			</footer>
 		</div> <!-- div class "iferrorscreensize" end-->
-	</body>
-	<!-- BODY END -->
-
+	</body> <!-- BODY END -->
 </html>

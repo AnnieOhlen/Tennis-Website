@@ -1,47 +1,10 @@
-/*Importing colors:*/
 @import "colortheme.css";
-
-
-/* - - - - - - - - - - - - - - - - 
-(Standard less than 600px and =/more than 350px.)
-* Orientation landscape.                                    | Note:
-* Equal or more than 600px.                                 | Note:
-* Equal or less than 240px.                                 | Note:
-* Equal or less than 120px.                                 | Note:
-* Less than 119px = NOT SUPPORTED + ERROR MESSAGE.          | Note:
-
-- - - - - - - - - - - - - - - - */
-
-.errormessagescreensize, .errormessageshort {
-    display:none;
-
-    margin: 0;
-    padding: 0;
-
-    background-color: var(--lighter);
-
-    color: var(--bw);
-
-    text-align: center;
-}
-
-
-/* LANDSCAPE */
-@media only screen and (orientation: landscape) {
-
-}
-
-
-
-
-
+/* CSS file for standard layout + layout different screen sizes. */
 
 /* 600px+ */
 @media screen and (min-width: 600px) {
-    /* TBD */
+
 }
-
-
 
 /* Max 600px */
 @media screen and (max-width: 600px) {
@@ -109,7 +72,23 @@
 }
 
 
-/* Less than 120px = NOT SUPPORTED + ERROR MESSAGE */
+
+
+
+/* ERROR MESSAGES */
+.errormessagescreensize, .errormessageshort {
+    display:none;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--lighter);
+
+    color: var(--bw);
+
+    text-align: center;
+}
+
 @media screen and (max-width: 119px) {
 
     .errormessagescreensize {
@@ -119,7 +98,6 @@
 
     .iferrorscreensize {
         display: none;
-    /* Add some kind of script as well?*/
     }
 }
 
@@ -136,6 +114,5 @@
 
     .iferrorscreensize {
         display: none;
-    /* Add some kind of script as well?*/
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 	<head>
 		<title>Fictional Tennis Club Website</title>
@@ -19,9 +19,9 @@
 	<!-- BODY -->
 	<body>
 
-		<!-- Error messages for not supported screen width -->
-		<p class="errormessagescreensize">Error:<br/> Stödjer inte mindre än 120 pixlar i bredd!</p>
-		<p class="errormessageshort">Error:<br/> Liten skärm<br/>!</p>
+		<!-- Error messages -->
+		<p class="errormessagescreensize">Error:<br/> Does not support less than 120 pixels in width!</p>
+		<p class="errormessageshort">Error:<br/> Small screen!<br/>!</p>
 
 		<div class="iferrorscreensize">
 
@@ -36,79 +36,66 @@
 				</ul>
 			</nav>
 
-			<button id="changetheme" onclick="changeTheme"></button>
+			<button id="themebutton" onclick="themeButton"></button>
+			<button id="hamburger" onclick="flipBurger"></button>
 
-			<div class="gridcontainer">
-				<header>
-					<h1 class="h1headline">Reservation</h1>
-				</header>
+			<header>
+				<h1 class="h1headline">Reservation</h1>
+			</header>
 
-				<!-- MAIN -->
-				<div class="divclassmaincontent">
-					<main>
-						<div class="divclub">
-							<p><br/>
-								About Reservations<br/>
-								To make any reservations...
-							<br/><br/></p>
-						</div>
-
-						<!-- BOOKING FORM -->
-						<div id="dividbooking">
-							<form>
-								Would you like to book anything? <br />If yes, then please sumbit the form down below.<br/><br/>
-								<label for="fullname">Full name:</label>
-								<input type="text" id="fullname" name="fullname" placeholder="Full Name"><br/><br/>
-
-								<label for="bookcourt">Which court(s) would you like to book?</label><br/>
-								<input type="checkbox" id="court_a" name="bookcourt" value="Court A">
-								<label for="court_a">Court A</label><br/>
-								<input type="checkbox" id="court_b" name="bookcourt" value="Court B">
-								<label for="court_b">Court B</label><br/><br/>
-
-								<label for="bookchange">Which changing room would you like to book?</label><br/>
-								<input type="checkbox" id="change_a" name="bookchange" value="Changing room A">
-								<label for="change_a">Changing room A</label><br/>
-								<input type="checkbox" id="change_b" name="bookchange" value="Changing room B">
-								<label for="change_b">Changing room B</label><br/>
-								<input type="checkbox" id="change_c" name="bookchange" value="Changing room C">
-								<label for="change_c">Changing room C</label><br/><br/>
-
-								<label for="booksauna">Would you like to book the sauna?</label><br/>
-								<input type="radio" id="sauna_yes" name="booksauna" value="Yes">
-								<label for="sauna_yes">Yes</label><br/>
-								<input type="radio" id="sauna_no" name="booksauna" value="No">
-								<label for="sauna_no">No</label><br/><br/>
-
-								<label for="emailconfirm">E-mail for confirmation:</label>
-								<input type="text" id="emailconfirm" name="emailconfirm" placeholder="E-mail adress"><br/><br/>
-
-								<br/><input type="submit" value="Submit">
-							</form>
-						</div>
-						<!-- BOOKING FORM END -->
-
-						<img src="Media\pexels-pixabay-459399.jpg" alt="Beach" />
-
-						<div class="divclassinfo">
-							<p><br />
-								Ytterligare en div för text...
-							<br /><br /></p>
-						</div>
-					</main>
-					<!-- MAIN END -->
+			<!-- MAIN -->
+			<main>
+				<div class="divclub">
+					<p><br/>
+					To make any reservations please use the form below.
+					<br/><br/></p>
 				</div>
-				<!-- DIV MAIN END -->
 
-				<footer>
-						<ul>
-							<li><a href="https://github.com/AnnieOhlen/Tennis-Website" target="_blank"><i class="fa-brands fa-github"></i> About us</a></li>
-						</ul>
-				</footer>
+				<!-- BOOKING FORM -->
+				<div id="dividbooking">
+					<form>
+						<br/>Would you like to book anything? <br />If yes, then please sumbit the form down below.<br/><br/>
+						<label for="fullname">Full name:</label>
+						<input type="text" id="fullname" name="fullname" placeholder="Full Name"><br/><br/>
 
-			</div> <!-- DIV GRIDCONTAINER END -->
+						<label for="bookcourt">Which court(s) would you like to book?</label><br/>
+						<input type="checkbox" id="court_a" name="bookcourt" value="Court A">
+						<label for="court_a">Court A</label><br/>
+						<input type="checkbox" id="court_b" name="bookcourt" value="Court B">
+						<label for="court_b">Court B</label><br/><br/>
+
+						<label for="bookchange">Which changing room would you like to book?</label><br/>
+						<input type="checkbox" id="change_a" name="bookchange" value="Changing room A">
+						<label for="change_a">Changing room A</label><br/>
+						<input type="checkbox" id="change_b" name="bookchange" value="Changing room B">
+						<label for="change_b">Changing room B</label><br/>
+						<input type="checkbox" id="change_c" name="bookchange" value="Changing room C">
+						<label for="change_c">Changing room C</label><br/><br/>
+
+						<label for="booksauna">Would you like to book the sauna?</label><br/>
+						<input type="radio" id="sauna_yes" name="booksauna" value="Yes">
+						<label for="sauna_yes">Yes</label><br/>
+						<input type="radio" id="sauna_no" name="booksauna" value="No">
+						<label for="sauna_no">No</label><br/><br/>
+
+						<label for="emailconfirm">E-mail for confirmation:</label>
+						<input type="text" id="emailconfirm" name="emailconfirm" placeholder="E-mail adress"><br/><br/>
+
+						<br/><input type="submit" value="Submit"><br/><br/>
+					</form>
+				</div>
+				<!-- BOOKING FORM END -->				
+
+				<div class="divimg">
+					<img class="img1" src="Media\pexels-pixabay-459399.jpg" alt="Beach" />
+				</div>
+			</main> <!-- MAIN END -->
+
+			<footer>
+				<ul>
+					<li><a href="https://github.com/AnnieOhlen/Tennis-Website" target="_blank"><i class="fa-brands fa-github"></i> About us</a></li>
+				</ul>
+			</footer>
 		</div> <!-- div class "iferrorscreensize" end-->
-	</body>
-	<!-- BODY END -->
-
+	</body> <!-- BODY END -->
 </html>

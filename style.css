@@ -105,13 +105,6 @@ p, a, form {
     text-decoration: none;
 }
 
-/* Smaller citations or referal to resources.*/
-/*
-.classcitation {
-}
-*/
-
-
 
 /* - - - - HEADER - - - - */
 header {
@@ -124,6 +117,10 @@ header {
     outline-color: var(--wb);
 
     background-color: var(--medium-dark);
+
+    width: 90vw;
+    margin: auto;
+    margin-top: 1rem;
 }
 
 h1 {
@@ -139,12 +136,23 @@ h1 {
     color: var(--wb);
     text-align: center;
 
-    text-shadow: 2px 2px 4px grey;    
+    text-shadow: 2px 2px 4px grey;
 }
 
 img {
-    /*max-height: 80vh;*/
-    max-width: 100%;
+    border-radius: .5rem;
+}
+
+.divimg {
+    text-align: center;
+}
+
+.img1 {
+    max-width: 90%;
+}
+
+.img2 {
+    max-height: 60vh;
 }
 
 
@@ -156,21 +164,18 @@ img {
 
     text-align: center;
 
-    /*Nedan två rader om snyggt att de vita rutorna inte går över hela sidan.*/
-    width: 99vw;
+    width: 95vw;
     margin: auto;
+    border-radius: .5rem;
+}
+
+#dividbooking {
+    margin-bottom: 1rem;
 }
 
 .divclassinfo {
     margin-bottom: 3rem;
 }
-
-#dividbooking {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-}
-
 
 
 /* - - - - FOOTER - - - - */

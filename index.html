@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 	<head>
 		<title>Fictional Tennis Club Website</title>
@@ -19,9 +19,9 @@
 	<!-- BODY -->
 	<body>
 
-		<!-- Error messages for not supported screen width -->
-		<p class="errormessagescreensize">Error:<br/> Stödjer inte mindre än 120 pixlar i bredd!</p>
-		<p class="errormessageshort">Error:<br/> Liten skärm<br/>!</p>
+		<!-- Error messages -->
+		<p class="errormessagescreensize">Error:<br/> Does not support less than 120 pixels in width!</p>
+		<p class="errormessageshort">Error:<br/> Small screen!<br/>!</p>
 
 		<div class="iferrorscreensize">
 
@@ -39,54 +39,45 @@
 			<button id="themebutton" onclick="themeButton"></button>
 			<button id="hamburger" onclick="flipBurger"></button>
 
-			<div class="gridcontainer">
-				<header>
-					<h1 class="h1headline">Fictional Tennis Club</h1>
-				</header>
+			<header>
+				<h1 class="h1headline">Fictional Tennis Club</h1>
+			</header>
 
-				<!-- MAIN -->
-				<div class="divclassmaincontent">
-					<main>
-						<div class="divclub">
-
-							<p><br/>
-								History of the club<br/>
-								It all began a cold winter morning when Fictionalname was heading off for their morning practice - a
-								practice run all but inspiring in the frost. Fictionalname hatched an idea to support their favourite sport; Tennis.
-								A purchase and a move abroad later the Fictional Tennis Club was born to enable winter dwellers to enjoy Tennis
-								and relaxation in a blissfully warm weather during otherwise bleak months.
-							<br/><br/></p>
-						</div>
-
-						<img src="Media\pexels-sumit-shinde-763699.jpg" alt="Tropical Beach" />
-
-						<div class="divclassinfo">
-							<p><br>
-							Tennis is a racket sport that is played either individually against a single opponent (singles) or between two teams of two players each (doubles).
-							Each player uses a tennis racket that is strung with cord to strike a hollow rubber ball covered with felt over or around a net and into the opponent's court.
-							The object of the game is to manoeuvre the ball in such a way that the opponent is not able to play a valid return.
-							The player who is unable to return the ball validly will not gain a point, while the opposite player will.
-
-							<br/><br/>Tennis is played by millions of recreational players and is a popular worldwide spectator sport.
-							<br/><br/>
-
-							<a class="citation" href="https://en.wikipedia.org/wiki/Tennis" target="_blank">Wikipedia</a>
-							</p>
-						</div>
-					</main>
-					<!-- MAIN END -->
+			<!-- MAIN -->
+			<main>
+				<div class="divclub">
+					<p><br/>
+					History of the club<br/>
+					It all began a cold winter morning when Name was heading off for their morning practice - a
+					practice run all but inspiring in the frost. Name hatched an idea to support their favourite sport; Tennis.
+					A purchase and a move abroad later the Fictional Tennis Club was born to enable winter dwellers to enjoy Tennis
+					and relaxation in a blissfully warm weather during otherwise bleak months.
+					<br/><br/></p>
 				</div>
-				<!-- DIV MAIN END -->
 
-				<footer>
-						<ul>
-							<li><a href="https://github.com/AnnieOhlen/Tennis-Website" target="_blank"><i class="fa-brands fa-github"></i> About us</a></li>
-						</ul>
-				</footer>
+				<div class="divimg">
+					<img class="img1" src="Media\pexels-sumit-shinde-763699.jpg" alt="Tropical Beach" />
+				</div>
+				
+				<div class="divclassinfo">
+					<p><br>
+					Tennis is a racket sport that is played either individually against a single opponent (singles) or between two teams of two players each (doubles).
+					Each player uses a tennis racket that is strung with cord to strike a hollow rubber ball covered with felt over or around a net and into the opponent's court.
+					The object of the game is to manoeuvre the ball in such a way that the opponent is not able to play a valid return.
+					The player who is unable to return the ball validly will not gain a point, while the opposite player will.
+					<br/><br/>Tennis is played by millions of recreational players and is a popular worldwide spectator sport.
+					<br/><br/>
 
-			</div> <!-- DIV GRIDCONTAINER END -->
+					Source: <a class="citation" href="https://en.wikipedia.org/wiki/Tennis" target="_blank">Wikipedia</a><br/><br/>
+					</p>
+				</div>
+			</main> <!-- MAIN END -->
+
+			<footer>
+				<ul>
+					<li><a href="https://github.com/AnnieOhlen/Tennis-Website" target="_blank"><i class="fa-brands fa-github"></i> About us</a></li>
+				</ul>
+			</footer>
 		</div> <!-- div class "iferrorscreensize" end-->
-	</body>
-	<!-- BODY END -->
-
+	</body> <!-- BODY END -->
 </html>
