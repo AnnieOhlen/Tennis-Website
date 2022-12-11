@@ -56,11 +56,17 @@
     }
 
     h1 {
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 
     footer {
         position: static;
+    }
+
+    form label, form input {
+        font-size: 1rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
     }
 }
 

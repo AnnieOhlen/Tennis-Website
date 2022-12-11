@@ -1,7 +1,8 @@
-//"use strict";
+'use strict';
 
 //Button at the bottom of the page to get back to the top.
-function topFunction() {
+/*
+  function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
@@ -10,9 +11,6 @@ function topFunction() {
 
 
 
-
-
-/*
 function changeTheme() {
     var element = document.body;
     element.classList.toggle("darkMode")
@@ -21,7 +19,7 @@ function changeTheme() {
 
 
 
-
+//const setTheme = theme => document.documentElement.className = theme;
 
 
 

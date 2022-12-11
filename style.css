@@ -143,18 +143,16 @@ img {
 }
 
 form label, form input {
-    border-radius: .4rem;
-    border: .1rem solid white;
+    background-color: var(--dark);
+    border-radius: .5rem;
     padding: .2rem;
     margin: auto;
-}
-
-form label {
-    background-color: var(--dark);
+    max-width: 80vw;
 }
 
 form input {
     background-color: white;
+    border: .1rem solid var(--dark);
 }
 
 #formsubmit {
@@ -167,6 +165,7 @@ form input {
     color: white;
     font-weight: bold;
     text-shadow: .1rem .1rem .2rem black;
+    text-transform: uppercase;
 }
 
 .divclassinfo {

@@ -6,7 +6,8 @@ CSS for colors only:
 * Any CSS neccesary for switch/toogle
 - - - - - - - - - - - - - - - - */
 
-:root {
+:root,
+:root.light {
     --bw: black;
     --dark: #62959c;
     --medium-dark: #C19277;
@@ -15,9 +16,12 @@ CSS for colors only:
     --wb: white;
   }
 
-.darkmode {
+:root.darkmode {
     --bw: white;
-    /* TBD */
+    --dark: #EAE3C8;
+    --medium-dark: #C2B092;
+    --lighter: #C19277;
+    --bright: #62959c;
     --wb: black;
 }
 
