@@ -17,7 +17,7 @@ function changeTheme() {
       document.documentElement.style.setProperty('--medium-dark', '#C19277');
       document.documentElement.style.setProperty('--lighter', '#C2B092');
       document.documentElement.style.setProperty('--bright', '#EAE3C8');
-      document.documentElement.style.setProperty('--wb', '#000000');
+      document.documentElement.style.setProperty('--wb', '#ffffff');
       document.body.dataset.mode = 'dark';
       e.target.innerHTML = 'Light';
     }
